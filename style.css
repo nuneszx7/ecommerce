@@ -11,8 +11,8 @@ ul,ol,li{
     list-style: none;
 }
 :root{
-    --primary-color: #0051ff;
-    --secundary-color: #e7f6fe;
+    --primary-color: #548f99;
+    --secundary-color: #ebf8fd;
     --default-shadow: 0 4px 4px #0004;
     --default-padding: 0 80px;
 }
@@ -60,7 +60,7 @@ header li:hover{
 }
 
 header button {
-    height: 48px;
+    height: 40px;
     width: 120px;
     border-radius: 12px;
     border: none;
@@ -77,4 +77,139 @@ header button {
 
 header button img {
     width: 20%;
+}
+
+section{
+    height: 100vh;
+    padding: var(--default-padding);
+}
+
+
+
+
+
+
+.home {
+    /* background-color: aquamarine; */
+    /* background-image: url();
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: contain; */
+    display: grid;
+    grid-template-rows: 70% 30%;
+}
+/* .hero{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 64px;
+}
+.hero h2 {
+    font-size: 4rem;
+    width: 568px;
+    font-weight: 500;
+    position: relative;
+    bottom: 80px;
+    font-style: italic;
+}
+.hero span{
+    color: var(--primary-color)
+} */
+.container-produtos{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 760px;
+    gap: 16px;
+}
+
+.produto {
+    position: relative;
+    display:flex;
+    border-radius: 12px;
+}
+
+.produto img {
+    margin-top: 250px;
+    width: 70%;
+
+}
+
+.add-produto {
+    position: absolute;
+    top: -16px;
+    right: -20px;
+    display: grid;
+    place-content: center;
+    height: 40px;
+    width: 40px;
+    font-size: 2rem;
+    color: white;
+    border-radius: 12px;
+    border: 2px solid white;
+    top: 220px;
+    right: -16px;
+    background-color: var(--primary-color);
+    opacity: 0;
+    transition: .5s;
+}
+
+.produto:hover .add-produto {
+    opacity: 1;
+}
+
+.animacao{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    border-radius: 0 0 12px 12px;
+}
+
+/* .animacao p {
+
+    
+
+} */
+
+.container-info {
+    display: flex;
+    height: 36px;
+    width: 100%;
+    padding: 0 16px;
+    position: absolute;
+    bottom: -36px;
+    background-color:#0008;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0008;
+    transition: .6s;
+}
+
+
+
+.produto:hover .container-info{
+    bottom: 0;
+}
+
+.container-info p {
+    
+    width: 100px;
+    font-size: 12px;
+    color: white;
+}
+
+.container-info span{
+    display: grid;
+    place-content: center;
+    width: 57px;
+    height: 20px;
+    background-color: var(--primary-color);
+    font-size: 10px;
+    color: white;
+    border-radius: 4px;
 }
